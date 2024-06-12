@@ -1,0 +1,72 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #343a40;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    padding-top: 56px; /* Height of the navbar */
+}
+
+header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+#trips .card {
+    margin-bottom: 30px;
+}
+
+footer {
+    background: var(--text-color);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.card img {
+    transition: transform 0.2s;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}.school-section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.school-section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+.school {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.school img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
