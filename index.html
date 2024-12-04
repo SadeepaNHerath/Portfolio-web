@@ -1,125 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sadeepa Herath</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Sadeepa Herath - Full Stack Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Sadeepa Herath</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#trips">trips</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <header class="header" id="home"
-        <div class="container">
-            <h1>Welcome You All !!!</h1>
-            <p>Showcasing about me.</p>
-        </div>
-    </header>
 
-    <section id="about" class="py-5">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section bg-light text-center py-5 d-flex align-items-center">
         <div class="container">
-            <h2 class="text-center">About Me</h2>
-            <p class="lead text-center">I am Sadeepa Herath, a student at iCET, pursuing a Full Stack Developer course. Explore my journey and trips as I dive into the world of web development!</p>
-            <div align="center">
-                <img src="img/me.JPG" alt="ITS ME" width="500px" height="700px" style="align-items: center; justify-items: center;"> 
-            </div>
-        </div>
-    </section>
-    <section class="school-section">
-        <h2>Educational Background</h2>
-        
-        <div class="school">
-            <a href="https://www.icet.lk/"><img src="img/icET.png" alt="iCET Logo"></a>
-            <div class="school-details">
-                <h3>Current School</h3>
-                <p><strong>Institute of Computing and Emerging Technologies (iCET)</strong></p>
-                <p>Full Stack Developer Course</p>
-            </div>
-        </div>
-        
-        <div class="school">
-            <img src="" alt="Daladagama P.V. Logo">
-            <div class="school-details">
-                <h3>Previous Schools</h3>
-                <p><strong>Daladagama Primary School</strong></p>
-                <p>2009-2014</p>
-            </div>
-        </div>
-        
-        <div class="school">
-            <a href="https://maliyadeva.lk/"><img src="img/Maliyadeva.png" alt="Maliyadeva Logo"></a>
-            <div class="school-details">
-                <p><strong>Maliyadeva College</strong></p>
-                <p>2015-2024</p>
-            </div>
-        </div>
-    </section>
-        
-    </section>
-    <!-- trips Section -->
-    <section id="trips" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center">Trips</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="img/s1.JPG" class="card-img-top" alt="Trip 1">
+                <div class="col-lg-6 text-lg-start text-center">
+                    <h1 class="display-4 mb-4">Hi, I'm <span class="text-primary">Sadeepa Herath</span></h1>
+                    <p class="lead mb-4">Passionate about creating innovative web solutions</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">Get In Touch</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/me.png" alt="Developer" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold" data-aos="zoom-in">About Me</h2>
+            <div class="row g-5 align-items-center">
+                <!-- Education & Experience Section -->
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="card border-0 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Sigiriya</h5>
-                            <p class="card-text">17.02.2024</p>
-                            <a href="#trip1" class="btn btn-primary">View Photos</a>
+                            <h3 class="mb-4 text-primary">Education</h3>
+                            <p class="mb-4"><strong>University of Moratuwa</strong><br>Bachelor of Science in Artificial
+                                Intelligence (Pending Intake), 2024 - Present</p>
+                            <p class="mb-4"><strong>Maliyadeva College, Kurunegala</strong><br>Advanced Levels – 3As
+                                (Combined Maths, Physics, ICT), Z-Score: 2.1919, 2015 - 2024</p>
+                            <p class="mb-4"><strong>iCET Institute</strong><br>ICD Program - Full-Stack Development,
+                                2024 - Present</p>
+                            <h3 class="mb-4 text-primary">Experience</h3>
+                            <ul>
+                                <li><strong>Project Manager - Medix Patient Management System</strong>: Led the
+                                    development of a microservice for medical records and reports in a multi-team
+                                    architecture.</li>
+                                <li><strong>Team Leader - Project WeCare</strong>: Spearheaded the development of a
+                                    hospital management system, winning the Best UI Award.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="img/g1.jpg" class="card-img-top" alt="Trip 2">
+                <!-- Personal Description Section -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="card border-0 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Galle</h5>
-                            <p class="card-text">24.02.2024</p>
-                            <a href="#trip2" class="btn btn-primary">View Photos</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="img/m1.JPG" class="card-img-top" alt="Trip 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Matara</h5>
-                            <p class="card-text">25.02.2024</p>
-                            <a href="#trip3" class="btn btn-primary">View Photos</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="img/d1.JPG" class="card-img-top" alt="Trip 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Deduru Oya</h5>
-                            <p class="card-text">10.03.2024</p>
-                            <a href="#trip4" class="btn btn-primary">View Photos</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="img/A1.JPG" class="card-img-top" alt="Trip 5">
-                        <div class="card-body">
-                            <h5 class="card-title">Anuradhapura</h5>
-                            <p class="card-text">6.02.2024</p>
-                            <a href="#trip5" class="btn btn-primary">View Photos</a>
+                            <p class="fs-5">
+                                I am a passionate Full Stack Developer with expertise in Angular, React, Spring Boot,
+                                and Node.js. I have led various projects, including developing the Medix Patient
+                                Management System, Open Books book-sharing platform, and the Ceylon Burgers POS system.
+                                Currently, I am focused on expanding my skills in Artificial Intelligence and building
+                                impactful digital solutions.
+                            </p>
+                            <h3 class="mb-4 text-primary">Key Skills</h3>
+                            <ul>
+                                <li>Full-Stack Development (HTML, CSS, JavaScript, React, Angular, Spring Boot)</li>
+                                <li>Project Management & Leadership</li>
+                                <li>API Design & Integration</li>
+                                <li>Database Management & Security</li>
+                                <li>UI/UX Design & Implementation</li>
+                                <li>Effective Communication & Team Collaboration</li>
+                            </ul>
+                            <div class="d-flex justify-content-center gap-3 mt-4">
+                                <a href="https://github.com/SadeepaNHerath" class="btn btn-outline-dark rounded-circle"
+                                    data-aos="zoom-in"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/sadeepa-herath-02ab67310/"
+                                    class="btn btn-outline-dark rounded-circle" data-aos="zoom-in"
+                                    data-aos-delay="100"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.tiktok.com/@sadeepanherath?_t=8rwDzR7qySW&_r=1"
+                                    class="btn btn-outline-dark rounded-circle" data-aos="zoom-in"
+                                    data-aos-delay="200"><i class="fab fa-tiktok"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -127,41 +111,169 @@
         </div>
     </section>
 
-    <section id="contact" class="py-5">
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light" data-aos="fade-up">
         <div class="container">
-            <h2 class="text-center">Contact Me</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            <h2 class="text-center mb-5 fw-bold" data-aos="zoom-in">Skills</h2>
+            <div class="row g-4">
+                <!-- Frontend Skills -->
+                <div class="col-md-4" data-aos="fade-right">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-code fa-3x text-primary"></i>
+                    </div>
+                    <h3 class="text-center">Frontend</h3>
+                    <ul class="list-group shadow-sm">
+                        <li class="list-group-item"><i class="fab fa-html5 text-danger me-2"></i>HTML5</li>
+                        <li class="list-group-item"><i class="fab fa-css3-alt text-primary me-2"></i>CSS3</li>
+                        <li class="list-group-item"><i class="fab fa-js text-warning me-2"></i>JavaScript</li>
+                        <li class="list-group-item"><i class="fab fa-react text-info me-2"></i>React</li>
+                    </ul>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                <!-- Backend Skills -->
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-server fa-3x text-secondary"></i>
+                    </div>
+                    <h3 class="text-center">Backend</h3>
+                    <ul class="list-group shadow-sm">
+                        <li class="list-group-item"><i class="fab fa-node-js text-success me-2"></i>Node.js</li>
+                        <li class="list-group-item"><i class="fas fa-code text-primary me-2"></i>Python</li>
+                        <li class="list-group-item"><i class="fas fa-database text-warning me-2"></i>SQL</li>
+                        <li class="list-group-item"><i class="fas fa-leaf text-success me-2"></i>MongoDB</li>
+                    </ul>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+                <!-- Tools Skills -->
+                <div class="col-md-4" data-aos="fade-left">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-tools fa-3x text-dark"></i>
+                    </div>
+                    <h3 class="text-center">Tools</h3>
+                    <ul class="list-group shadow-sm">
+                        <li class="list-group-item"><i class="fab fa-git-alt text-danger me-2"></i>Git</li>
+                        <li class="list-group-item"><i class="fab fa-docker text-primary me-2"></i>Docker</li>
+                        <li class="list-group-item"><i class="fas fa-cloud text-info me-2"></i>AWS</li>
+                        <li class="list-group-item"><i class="fas fa-code text-secondary me-2"></i>VS Code</li>
+                    </ul>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Sadeepa Herath. All Rights Reserved.</p>
-        <a href="https://www.facebook.com/sadeepa.herath.750?mibextid=ZbWKwL"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-        </svg></a>
-        <a href="https://wa.me/qr/YFCMEVAQBMQTA1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-        </svg></a>
-        <a href="https://youtube.com/@bodin_karayo?si=qwp-jmzsUALsW_Po"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-        </svg></a>
-        <a href="https://www.tiktok.com/@syntax_squadron?_t=8n7rW45rP4D&_r=1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
-            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
-        </svg></a>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Projects</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" alt="Project 1"
+                            class="img-fluid">
+                        <div class="project-info">
+                            <h3>E-Commerce Platform</h3>
+                            <p>A full-stack e-commerce solution with React and Node.js</p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+                                <a href="#" class="btn btn-outline-primary btn-sm">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Project 2"
+                            class="img-fluid">
+                        <div class="project-info">
+                            <h3>Task Management App</h3>
+                            <p>A React-based task management application</p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+                                <a href="#" class="btn btn-outline-primary btn-sm">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Project 3"
+                            class="img-fluid">
+                        <div class="project-info">
+                            <h3>Weather Dashboard</h3>
+                            <p>A weather application using OpenWeather API</p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
+                                <a href="#" class="btn btn-outline-primary btn-sm">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>sadeepahearth@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+94 70 590 5313</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Maho, Kurunegala, Srilanka</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <form id="contact-form" class="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <a href="https://wa.me/qr/YFCMEVAQBMQTA1">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3 bg-dark text-white">
+        <div class="container text-center">
+            <p>&copy; 2024 Sadeepa Herath. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
+
 </html>
