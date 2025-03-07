@@ -1,108 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sadeepa Herath - Full Stack Developer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <title>Sadeepa Herath - Full Stack Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000" data-border-radius="medium"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark shadow-sm fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#home">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+</head>
+<body class="bg-gray-900 text-gray-100 font-['Space_Grotesk']">
+    <nav class="fixed top-0 w-full z-50 bg-gray-900/80 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-8xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="flex items-center space-x-3">
+                    <img src="assets/logo.png" alt="Sadeepa Herath" class="h-10 w-10 rounded-full shadow-sm">
+                    <span class="text-xl font-bold text-gray-300 hover:text-gray-100">Sadeepa Herath</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-custom transition-colors">About</a>
+                    <a href="#skills" class="hover:text-custom transition-colors">Skills</a>
+                    <a href="#projects" class="hover:text-custom transition-colors">Projects</a>
+                    <a href="#blog" class="hover:text-custom transition-colors">Blog</a>
+                    <a href="#contact" class="hover:text-custom transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section bg-light text-center py-5 d-flex align-items-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 text-lg-start text-center">
-                    <h1 class="display-4 mb-4">Hi, I'm <span class="text-primary">Sadeepa Herath</span></h1>
-                    <p class="lead mb-4">Passionate about creating innovative web solutions</p>
-                    <a href="#contact" class="btn btn-primary btn-lg">Get In Touch</a>
+    <header class="min-h-screen flex items-center justify-center relative overflow-hidden" style="background: linear-gradient(45deg, #1a1a1a 0%, #2d2d2d 100%);">
+        <div class="absolute inset-0 opacity-20">
+            <img src="assets/background.jpg" alt="Background" class="w-full h-full object-cover">
+        </div>
+        <div class="text-center z-10 px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-custom to-purple-500">
+                    Full Stack Developer
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300">Crafting digital experiences with code and creativity</p>
+            <a href="#contact" class="!rounded-button bg-custom hover:bg-custom/90 text-white px-8 py-3 text-lg font-medium inline-flex items-center space-x-2">
+                <span>Let's Connect</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-2xl text-custom"></i>
+        </div>
+    </header>
+
+    <section id="about" class="h-screen flex items-center py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 w-full">
+            <h2 class="text-4xl font-bold mb-12 text-center">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center h-[70vh]">
+                <!-- Profile Image -->
+                <div class="flex justify-center">
+                    <div class="w-full max-w-sm md:max-w-md lg:max-w-lg aspect-[4/5] rounded-lg overflow-hidden">
+                        <img src="assets/profile.jpg" alt="Profile" class="object-cover w-full h-full">
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <img src="img/me.png" alt="Developer" class="img-fluid rounded">
-                </div>
+                <!-- Text Content -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-custom">Hello, I'm Sadeepa Herath</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        With over 1 years of experience in full-stack development, I specialize in building scalable web applications and innovative digital solutions. My passion lies in creating elegant, efficient code that solves real-world problems. I enjoy working with modern web technologies, optimizing performance, and contributing to open-source projects.
+                    </p>
+                
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="p-4 border border-gray-800 rounded-lg hover:border-custom transition-colors">
+                            <h4 class="font-semibold mb-2">Experience</h4>
+                            <p class="text-gray-400">1+ Years</p>
+                        </div>
+                        <div class="p-4 border border-gray-800 rounded-lg hover:border-custom transition-colors">
+                            <h4 class="font-semibold mb-2">Projects</h4>
+                            <p class="text-gray-400">30+ Completed</p>
+                        </div>
+                        <div class="p-4 border border-gray-800 rounded-lg hover:border-custom transition-colors">
+                            <h4 class="font-semibold mb-2">Education</h4>
+                            <p class="text-gray-400">BSc(Hons) Artificial Intelligence Pending  Intake</p>
+                        </div>
+                        <div class="p-4 border border-gray-800 rounded-lg hover:border-custom transition-colors">
+                            <h4 class="font-semibold mb-2">Certifications</h4>
+                            <pre class="text-gray-400">Prompt Design in Vertex AI 
+Skill Badge
+Postman API Student Expert</pre>
+                        </div>
+                    </div>
+                
+                    <a href="assets/CV - Sadeepa Herath.pdf" download 
+                       class="!rounded-button inline-flex items-center space-x-2 border border-custom px-6 py-3 text-custom hover:bg-custom hover:text-white transition-colors">
+                        <i class="fas fa-download"></i>
+                        <span>Download Resume</span>
+                    </a>
+                </div>                
             </div>
         </div>
     </section>
+    
 
-    <!-- About Section -->
-    <section id="about" class="py-5 bg-light" data-aos="fade-up">
-        <div class="container">
-            <h2 class="text-center mb-5 fw-bold" data-aos="zoom-in">About Me</h2>
-            <div class="row g-5 align-items-center">
-                <!-- Education & Experience Section -->
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body">
-                            <h3 class="mb-4 text-primary">Education</h3>
-                            <p class="mb-4"><strong>University of Moratuwa</strong><br>Bachelor of Science in Artificial
-                                Intelligence (Pending Intake), 2024 - Present</p>
-                            <p class="mb-4"><strong>Maliyadeva College, Kurunegala</strong><br>Advanced Levels – 3As
-                                (Combined Maths, Physics, ICT), Z-Score: 2.1919, 2015 - 2024</p>
-                            <p class="mb-4"><strong>iCET Institute</strong><br>ICD Program - Full-Stack Development,
-                                2024 - Present</p>
-                            <h3 class="mb-4 text-primary">Experience</h3>
-                            <ul>
-                                <li><strong>Project Manager - Medix Patient Management System</strong>: Led the
-                                    development of a microservice for medical records and reports in a multi-team
-                                    architecture.</li>
-                                <li><strong>Team Leader - Project WeCare</strong>: Spearheaded the development of a
-                                    hospital management system, winning the Best UI Award.</li>
-                            </ul>
+    <section id="skills" class="py-20 bg-gray-900/50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-16 text-center">Skills & Expertise</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Frontend Development -->
+                <div class="p-6 bg-gray-800/50 rounded-lg hover:transform hover:-translate-y-1 transition-transform">
+                    <div class="text-3xl text-custom mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Frontend Development</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>React.js</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="h-2 bg-custom rounded-full skill-bar" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Vue.js</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="h-2 bg-custom rounded-full skill-bar" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>TypeScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="h-2 bg-custom rounded-full skill-bar" data-width="85%"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Personal Description Section -->
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body">
-                            <p class="fs-5">
-                                I am a passionate Full Stack Developer with expertise in Angular, React, Spring Boot,
-                                and Node.js. I have led various projects, including developing the Medix Patient
-                                Management System, Open Books book-sharing platform, and the Ceylon Burgers POS system.
-                                Currently, I am focused on expanding my skills in Artificial Intelligence and building
-                                impactful digital solutions.
-                            </p>
-                            <h3 class="mb-4 text-primary">Key Skills</h3>
-                            <ul>
-                                <li>Full-Stack Development (HTML, CSS, JavaScript, React, Angular, Spring Boot)</li>
-                                <li>Project Management & Leadership</li>
-                                <li>API Design & Integration</li>
-                                <li>Database Management & Security</li>
-                                <li>UI/UX Design & Implementation</li>
-                                <li>Effective Communication & Team Collaboration</li>
-                            </ul>
-                            <div class="d-flex justify-content-center gap-3 mt-4">
-                                <a href="https://github.com/SadeepaNHerath" class="btn btn-outline-dark rounded-circle"
-                                    data-aos="zoom-in"><i class="fab fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/sadeepa-herath-02ab67310/"
-                                    class="btn btn-outline-dark rounded-circle" data-aos="zoom-in"
-                                    data-aos-delay="100"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://www.tiktok.com/@sadeepanherath?_t=8rwDzR7qySW&_r=1"
-                                    class="btn btn-outline-dark rounded-circle" data-aos="zoom-in"
-                                    data-aos-delay="200"><i class="fab fa-tiktok"></i></a>
+    
+                <!-- Backend Development -->
+                <div class="p-6 bg-gray-800/50 rounded-lg hover:transform hover:-translate-y-1 transition-transform">
+                    <div class="text-3xl text-custom mb-4">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Backend Development</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Node.js</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="h-2 bg-custom rounded-full skill-bar" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Python</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="h-2 bg-custom rounded-full skill-bar" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>PostgreSQL</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="h-2 bg-custom rounded-full skill-bar" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- DevOps & Cloud -->
+                <div class="p-6 bg-gray-800/50 rounded-lg hover:transform hover:-translate-y-1 transition-transform">
+                    <div class="text-3xl text-custom mb-4">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">DevOps & Cloud</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>AWS</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="h-2 bg-custom rounded-full skill-bar" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Docker</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="h-2 bg-custom rounded-full skill-bar" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>CI/CD</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="h-2 bg-gray-700 rounded-full">
+                                <div class="h-2 bg-custom rounded-full skill-bar" data-width="80%"></div>
                             </div>
                         </div>
                     </div>
@@ -111,169 +224,109 @@
         </div>
     </section>
 
-
-
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-light" data-aos="fade-up">
-        <div class="container">
-            <h2 class="text-center mb-5 fw-bold" data-aos="zoom-in">Skills</h2>
-            <div class="row g-4">
-                <!-- Frontend Skills -->
-                <div class="col-md-4" data-aos="fade-right">
-                    <div class="text-center mb-3">
-                        <i class="fas fa-code fa-3x text-primary"></i>
-                    </div>
-                    <h3 class="text-center">Frontend</h3>
-                    <ul class="list-group shadow-sm">
-                        <li class="list-group-item"><i class="fab fa-html5 text-danger me-2"></i>HTML5</li>
-                        <li class="list-group-item"><i class="fab fa-css3-alt text-primary me-2"></i>CSS3</li>
-                        <li class="list-group-item"><i class="fab fa-js text-warning me-2"></i>JavaScript</li>
-                        <li class="list-group-item"><i class="fab fa-react text-info me-2"></i>React</li>
-                    </ul>
+    <section id="projects" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-8 text-center">Featured Projects</h2>
+            <div class="relative">
+                <div id="projects-container" class="flex space-x-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory px-2">
+                    <!-- Projects will be loaded here dynamically -->
                 </div>
-                <!-- Backend Skills -->
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="text-center mb-3">
-                        <i class="fas fa-server fa-3x text-secondary"></i>
-                    </div>
-                    <h3 class="text-center">Backend</h3>
-                    <ul class="list-group shadow-sm">
-                        <li class="list-group-item"><i class="fab fa-node-js text-success me-2"></i>Node.js</li>
-                        <li class="list-group-item"><i class="fas fa-code text-primary me-2"></i>Python</li>
-                        <li class="list-group-item"><i class="fas fa-database text-warning me-2"></i>SQL</li>
-                        <li class="list-group-item"><i class="fas fa-leaf text-success me-2"></i>MongoDB</li>
-                    </ul>
-                </div>
-                <!-- Tools Skills -->
-                <div class="col-md-4" data-aos="fade-left">
-                    <div class="text-center mb-3">
-                        <i class="fas fa-tools fa-3x text-dark"></i>
-                    </div>
-                    <h3 class="text-center">Tools</h3>
-                    <ul class="list-group shadow-sm">
-                        <li class="list-group-item"><i class="fab fa-git-alt text-danger me-2"></i>Git</li>
-                        <li class="list-group-item"><i class="fab fa-docker text-primary me-2"></i>Docker</li>
-                        <li class="list-group-item"><i class="fas fa-cloud text-info me-2"></i>AWS</li>
-                        <li class="list-group-item"><i class="fas fa-code text-secondary me-2"></i>VS Code</li>
-                    </ul>
+            </div>
+            <br>
+        </div>
+        <br>
+    </section>
+    
+    <section id="blog" class="py-20 bg-gray-900/50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-8 text-center">Latest Articles</h2>
+            <div class="relative">
+                <div id="articles-container" class="flex space-x-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory px-2">
+                    <!-- Articles will be loaded here dynamically -->
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Projects Section -->
-    <section id="projects" class="section-padding">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Projects</h2>
-            <div class="row">
-                <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" alt="Project 1"
-                            class="img-fluid">
-                        <div class="project-info">
-                            <h3>E-Commerce Platform</h3>
-                            <p>A full-stack e-commerce solution with React and Node.js</p>
-                            <div class="project-links">
-                                <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
-                                <a href="#" class="btn btn-outline-primary btn-sm">GitHub</a>
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-16 text-center">Get in Touch</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Let's Connect</h3>
+                    <p class="text-gray-300 mb-8">I'm always interested in hearing about new projects and opportunities. Feel free to reach out if you'd like to collaborate or just want to say hello!</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-custom">
+                                <i class="fas fa-envelope text-xl"></i>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Project 2"
-                            class="img-fluid">
-                        <div class="project-info">
-                            <h3>Task Management App</h3>
-                            <p>A React-based task management application</p>
-                            <div class="project-links">
-                                <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
-                                <a href="#" class="btn btn-outline-primary btn-sm">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-card">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Project 3"
-                            class="img-fluid">
-                        <div class="project-info">
-                            <h3>Weather Dashboard</h3>
-                            <p>A weather application using OpenWeather API</p>
-                            <div class="project-links">
-                                <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
-                                <a href="#" class="btn btn-outline-primary btn-sm">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section-padding bg-light">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
-            <div class="row">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
                             <div>
-                                <h3>Email</h3>
-                                <p>sadeepahearth@gmail.com</p>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-400">sadeepahearth@gmail.com</p>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-custom">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
                             <div>
-                                <h3>Phone</h3>
-                                <p>+94 70 590 5313</p>
+                                <h4 class="font-medium">Location</h4>
+                                <p class="text-gray-400">Maho, Kurunegala</p>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-custom">
+                                <i class="fas fa-phone text-xl"></i>
+                            </div>
                             <div>
-                                <h3>Location</h3>
-                                <p>Maho, Kurunegala, Srilanka</p>
+                                <h4 class="font-medium">Whatsapp</h4>
+                                <p class="text-gray-400">0705905313</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <form id="contact-form" class="contact-form">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <a href="https://wa.me/qr/YFCMEVAQBMQTA1">
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </a>
-                    </form>
-                </div>
+                <form id="contactForm" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-custom" placeholder="Your name" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-custom" placeholder="Your email" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-custom h-32" placeholder="Your message" required></textarea>
+                    </div>
+                    <button type="submit" class="!rounded-button w-full bg-custom hover:bg-custom/90 text-white py-3 font-medium">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer mt-5 py-3 bg-dark text-white">
-        <div class="container text-center">
-            <p>&copy; 2024 Sadeepa Herath. All rights reserved.</p>
+    <footer class="py-8 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="text-gray-400">&copy; 2025 Sadeepa Herath. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/SadeepaNHerath" class="text-gray-400 hover:text-custom">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sadeepa-herath-02ab67310/" class="text-gray-400 hover:text-custom">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@sadeepanherath?_t=8rwDzR7qySW&_r=1" class="text-gray-400 hover:text-custom">
+                        <i class="fab fa-tiktok text-xl"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@SadeepaHearth" class="text-gray-400 hover:text-custom">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script type="module" src="app.js"></script>
+    <script src="app.js"></script>
 </body>
-
 </html>
