@@ -10,7 +10,7 @@ const projects = [
         title: "Ceylon-Burgers",
         description: "A full-featured e-commerce platform with real-time inventory management and secure payment processing.",
         image: "assets/projects/Ceylon-Burgers.png",
-        technologies: ["HTML", "CSS", "JS","AOS"],
+        technologies: ["HTML", "CSS", "JS", "AOS"],
         link: "https://sadeepanherath.github.io/Ceylon-Burgers/"
     },
     {
@@ -37,11 +37,11 @@ const projects = [
     {
         title: "Portfolio-Flutter",
         description: "A personal portfolio built showcasing my work and skills.",
-        image: "assets/projects/portfolio-flutter",
+        image: "assets/projects/portfolio-mobile.png",
         technologies: ["Dart", "Flutter", "C++"],
         link: "https://github.com/SadeepaNHerath/Portfolio-Flutter"
     }
-    
+
 ];
 
 const articles = [
@@ -77,6 +77,7 @@ const articles = [
 
 function loadArticles() {
     const container = document.getElementById("articles-container");
+    if (!container) return;
     container.innerHTML = "";
 
     articles.forEach(article => {
@@ -91,7 +92,7 @@ function loadArticles() {
                 <div class="flex items-center space-x-2 text-sm text-gray-400 mb-4">
                     <span>${article.category}</span>
                     <span>•</span>
-                    <span>${article.readTime}</span>
+                    <span>${article.readTime || "Read Time Unavailable"}</span>
                 </div>
                 <h3 class="text-xl font-semibold mb-2">${article.title}</h3>
                 <p class="text-gray-400 mb-4">${article.description}</p>
@@ -107,6 +108,7 @@ function loadArticles() {
 
 function loadProjects() {
     const container = document.getElementById("projects-container");
+    if (!container) return;
     container.innerHTML = "";
 
     projects.forEach(project => {
@@ -133,45 +135,65 @@ function loadProjects() {
     });
 }
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {
+function handleContactForm(event) {
     event.preventDefault();
 
-    emailjs.init("PUBLIC_KEY");
+    const nameEl = document.getElementById("name");
+    const emailEl = document.getElementById("email");
+    const messageEl = document.getElementById("message");
 
-    const formData = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value
-    };
+    const name = nameEl.value.trim();
+    const email = emailEl.value.trim();
+    const message = messageEl.value.trim();
 
-    emailjs.send("SERVICE_ID", "TEMPLATE_ID", formData)
-        .then(function(response) {
+    if (!name || !email || !message) {
+        alert("All fields are required!");
+        return;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        alert("Invalid email address!");
+        return;
+    }
+
+    emailjs.init("8w9PgmXYubXtJrHmF");
+
+    const formData = { name, email, message };
+
+    emailjs.send("service_v8os6qd", "template_mlk96op", formData)
+        .then(function (response) {
             alert("Message sent successfully!");
             document.getElementById("contactForm").reset();
-        }, function(error) {
+        })
+        .catch(function (error) {
+            console.error("Email sending failed:", error);
             alert("Failed to send message. Try again later.");
         });
-});
+}
 
-document.addEventListener("DOMContentLoaded", loadProjects);
-document.addEventListener("DOMContentLoaded", loadArticles);
+document.addEventListener("DOMContentLoaded", () => {
+    loadProjects();
+    loadArticles();
 
-document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.getElementById("contactForm");
+    if (contactForm) {
+        contactForm.addEventListener("submit", handleContactForm);
+    }
+
     const skillBars = document.querySelectorAll(".skill-bar");
-
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 const bar = entry.target;
                 bar.style.width = bar.getAttribute("data-width");
                 bar.style.transition = "width 1.5s ease-in-out";
-                observer.unobserve(bar); // Stop observing once animated
+                observer.unobserve(bar);
             }
         });
     }, { threshold: 0.3 });
 
     skillBars.forEach((bar) => {
-        bar.style.width = "0"; // Start with 0 width
+        bar.style.width = "0";
         observer.observe(bar);
     });
 });
