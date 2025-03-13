@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sadeepa Herath - Full Stack Developer Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
-    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
-    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000" data-border-radius="medium"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sadeepa Herath - Full Stack Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms,typography,aspect-ratio,container-queries"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000"
+        data-border-radius="medium"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
-<body class="bg-gray-900 text-gray-100 font-['Space_Grotesk']">
+
+<body class="bg-gradient-to-b from-gray-900 to-gray-800 text-gray-100 font-['Space_Grotesk']" data-scroll-container>
     <nav class="fixed top-0 w-full z-50 bg-gray-900/80 backdrop-blur-sm border-b border-gray-800">
         <div class="max-w-8xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
                 <a href="#" class="flex items-center space-x-3">
                     <img src="assets/logo.png" alt="Sadeepa Herath" class="h-10 w-10 rounded-full shadow-sm">
-                    <span class="text-xl font-bold text-gray-300 hover:text-gray-100">Sadeepa Herath</span>
+                    <span class="text-xl font-bold text-gray-300 hover:text-gray-100 transition-colors">Sadeepa
+                        Herath</span>
                 </a>
                 <div class="hidden md:flex space-x-8">
                     <a href="#about" class="hover:text-custom transition-colors">About</a>
@@ -36,24 +43,21 @@
         </div>
     </nav>
 
-    <header class="min-h-screen flex items-center justify-center relative overflow-hidden" style="background: linear-gradient(45deg, #1a1a1a 0%, #2d2d2d 100%);">
-        <div class="absolute inset-0 opacity-20">
-            <img src="assets/background.jpg" alt="Background" class="w-full h-full object-cover">
+    <header class="min-h-screen flex items-center justify-center relative overflow-hidden" data-scroll-section>
+        <div class="absolute inset-0">
+            <div class="stars"></div>
+            <div class="twinkling"></div>
         </div>
-        <div class="text-center z-10 px-4">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6">
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-custom to-purple-500">
-                    Full Stack Developer
-                </span>
-            </h1>
-            <p class="text-xl md:text-2xl mb-8 text-gray-300">Crafting digital experiences with code and creativity</p>
-            <a href="#contact" class="!rounded-button bg-custom hover:bg-custom/90 text-white px-8 py-3 text-lg font-medium inline-flex items-center space-x-2">
+        <div class="text-center z-10 px-4" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="text-7xl md:text-9xl font-bold mb-6 glitch-text" data-text="Full Stack Developer">Full Stack
+                Developer</h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300 typewriter">Crafting digital experiences with elegant code
+                and creative design</p>
+            <a href="#contact"
+                class="btn-glow bg-custom hover:bg-custom/90 text-white px-8 py-3 text-lg font-medium inline-flex items-center space-x-2">
                 <span>Let's Connect</span>
                 <i class="fas fa-arrow-right"></i>
             </a>
-        </div>
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <i class="fas fa-chevron-down text-2xl text-custom"></i>
         </div>
     </header>
 
@@ -71,9 +75,12 @@
                 <div class="space-y-6">
                     <h3 class="text-2xl font-semibold text-custom">Hello, I'm Sadeepa Herath</h3>
                     <p class="text-gray-300 leading-relaxed">
-                        With over 1 years of experience in full-stack development, I specialize in building scalable web applications and innovative digital solutions. My passion lies in creating elegant, efficient code that solves real-world problems. I enjoy working with modern web technologies, optimizing performance, and contributing to open-source projects.
+                        With over 1 years of experience in full-stack development, I specialize in building scalable web
+                        applications and innovative digital solutions. My passion lies in creating elegant, efficient
+                        code that solves real-world problems. I enjoy working with modern web technologies, optimizing
+                        performance, and contributing to open-source projects.
                     </p>
-                
+
                     <div class="grid grid-cols-2 gap-6">
                         <div class="p-4 border border-gray-800 rounded-lg hover:border-custom transition-colors">
                             <h4 class="font-semibold mb-2">Experience</h4>
@@ -85,7 +92,7 @@
                         </div>
                         <div class="p-4 border border-gray-800 rounded-lg hover:border-custom transition-colors">
                             <h4 class="font-semibold mb-2">Education</h4>
-                            <p class="text-gray-400">BSc(Hons) Artificial Intelligence Pending  Intake</p>
+                            <p class="text-gray-400">BSc(Hons) Artificial Intelligence Pending Intake</p>
                         </div>
                         <div class="p-4 border border-gray-800 rounded-lg hover:border-custom transition-colors">
                             <h4 class="font-semibold mb-2">Certifications</h4>
@@ -94,154 +101,112 @@ Skill Badge
 Postman API Student Expert</pre>
                         </div>
                     </div>
-                
-                    <a href="assets/CV - Sadeepa Herath.pdf" download 
-                       class="!rounded-button inline-flex items-center space-x-2 border border-custom px-6 py-3 text-custom hover:bg-custom hover:text-white transition-colors">
+
+                    <a href="assets/CV - Sadeepa Herath.pdf" download
+                        class="!rounded-button inline-flex items-center space-x-2 border border-custom px-6 py-3 text-custom hover:bg-custom hover:text-white transition-colors">
                         <i class="fas fa-download"></i>
                         <span>Download Resume</span>
                     </a>
-                </div>                
+                </div>
             </div>
         </div>
     </section>
-    
 
-    <section id="skills" class="py-20 bg-gray-900/50">
+
+    <section id="skills" class="py-20 bg-gray-900/50" data-scroll-section>
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-bold mb-16 text-center">Skills & Expertise</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Frontend Development -->
-                <div class="p-6 bg-gray-800/50 rounded-lg hover:transform hover:-translate-y-1 transition-transform">
-                    <div class="text-3xl text-custom mb-4">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">Frontend Development</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>React.js</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="h-2 bg-gray-700 rounded-full">
-                                <div class="h-2 bg-custom rounded-full skill-bar" data-width="95%"></div>
-                            </div>
+            <h2 class="text-4xl font-bold mb-16 text-center" data-aos="fade-up">Tech Stack</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                <!-- Example Skill Cards -->
+                <div class="skill-card" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front flex flex-col items-center justify-center">
+                            <i class="fab fa-react text-4xl mb-4"></i>
+                            <h3>React</h3>
                         </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Vue.js</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="h-2 bg-gray-700 rounded-full">
-                                <div class="h-2 bg-custom rounded-full skill-bar" data-width="90%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>TypeScript</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="h-2 bg-gray-700 rounded-full">
-                                <div class="h-2 bg-custom rounded-full skill-bar" data-width="85%"></div>
-                            </div>
+                        <div class="skill-card-back flex items-center justify-center">
+                            <p>Modern UI</p>
                         </div>
                     </div>
                 </div>
-    
-                <!-- Backend Development -->
-                <div class="p-6 bg-gray-800/50 rounded-lg hover:transform hover:-translate-y-1 transition-transform">
-                    <div class="text-3xl text-custom mb-4">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">Backend Development</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Node.js</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="h-2 bg-gray-700 rounded-full">
-                                <div class="h-2 bg-custom rounded-full skill-bar" data-width="90%"></div>
-                            </div>
+                <div class="skill-card" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front flex flex-col items-center justify-center">
+                            <i class="fab fa-node text-4xl mb-4"></i>
+                            <h3>Node.js</h3>
                         </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Python</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="h-2 bg-gray-700 rounded-full">
-                                <div class="h-2 bg-custom rounded-full skill-bar" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>PostgreSQL</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="h-2 bg-gray-700 rounded-full">
-                                <div class="h-2 bg-custom rounded-full skill-bar" data-width="80%"></div>
-                            </div>
+                        <div class="skill-card-back flex items-center justify-center">
+                            <p>Server-side JS</p>
                         </div>
                     </div>
                 </div>
-    
-                <!-- DevOps & Cloud -->
-                <div class="p-6 bg-gray-800/50 rounded-lg hover:transform hover:-translate-y-1 transition-transform">
-                    <div class="text-3xl text-custom mb-4">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">DevOps & Cloud</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>AWS</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="h-2 bg-gray-700 rounded-full">
-                                <div class="h-2 bg-custom rounded-full skill-bar" data-width="85%"></div>
-                            </div>
+                <div class="skill-card" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front flex flex-col items-center justify-center">
+                            <i class="fas fa-database text-4xl mb-4"></i>
+                            <h3>MongoDB</h3>
                         </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>Docker</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="h-2 bg-gray-700 rounded-full">
-                                <div class="h-2 bg-custom rounded-full skill-bar" data-width="90%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span>CI/CD</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="h-2 bg-gray-700 rounded-full">
-                                <div class="h-2 bg-custom rounded-full skill-bar" data-width="80%"></div>
-                            </div>
+                        <div class="skill-card-back flex items-center justify-center">
+                            <p>NoSQL Database</p>
                         </div>
                     </div>
                 </div>
+                <div class="skill-card" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front flex flex-col items-center justify-center">
+                            <i class="fab fa-js text-4xl mb-4"></i>
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div class="skill-card-back flex items-center justify-center">
+                            <p>Core Language</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front flex flex-col items-center justify-center">
+                            <i class="fab fa-python text-4xl mb-4"></i>
+                            <h3>Python</h3>
+                        </div>
+                        <div class="skill-card-back flex items-center justify-center">
+                            <p>Data & AI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front flex flex-col items-center justify-center">
+                            <i class="fab fa-java text-4xl mb-4"></i>
+                            <h3>Java</h3>
+                        </div>
+                        <div class="skill-card-back flex items-center justify-center">
+                            <p>Enterprise</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
             </div>
         </div>
     </section>
 
     <section id="projects" class="py-20 bg-gray-900">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-bold mb-8 text-center">Featured Projects</h2>
+            <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">Featured Projects</h2>
             <div class="relative">
-                <div id="projects-container" class="flex space-x-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory px-2">
-                    <!-- Projects will be loaded here dynamically -->
+                <div id="projects-container"
+                    class="flex space-x-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory px-2">
+                    <!-- Projects will be loaded here dynamically from projects.json -->
                 </div>
             </div>
-            <br>
         </div>
-        <br>
     </section>
-    
+
     <section id="blog" class="py-20 bg-gray-900/50">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-4xl font-bold mb-8 text-center">Latest Articles</h2>
             <div class="relative">
-                <div id="articles-container" class="flex space-x-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory px-2">
+                <div id="articles-container"
+                    class="flex space-x-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory px-2">
                     <!-- Articles will be loaded here dynamically -->
                 </div>
             </div>
@@ -254,10 +219,12 @@ Postman API Student Expert</pre>
             <div class="grid md:grid-cols-2 gap-12">
                 <div>
                     <h3 class="text-2xl font-semibold mb-6">Let's Connect</h3>
-                    <p class="text-gray-300 mb-8">I'm always interested in hearing about new projects and opportunities. Feel free to reach out if you'd like to collaborate or just want to say hello!</p>
+                    <p class="text-gray-300 mb-8">I'm always interested in hearing about new projects and opportunities.
+                        Feel free to reach out if you'd like to collaborate or just want to say hello!</p>
                     <div class="space-y-4">
                         <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-custom">
+                            <div
+                                class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-custom">
                                 <i class="fas fa-envelope text-xl"></i>
                             </div>
                             <div>
@@ -266,7 +233,8 @@ Postman API Student Expert</pre>
                             </div>
                         </div>
                         <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-custom">
+                            <div
+                                class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-custom">
                                 <i class="fas fa-map-marker-alt text-xl"></i>
                             </div>
                             <div>
@@ -275,7 +243,8 @@ Postman API Student Expert</pre>
                             </div>
                         </div>
                         <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-custom">
+                            <div
+                                class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-custom">
                                 <i class="fas fa-phone text-xl"></i>
                             </div>
                             <div>
@@ -288,17 +257,25 @@ Postman API Student Expert</pre>
                 <form id="contactForm" class="space-y-6">
                     <div>
                         <label class="block text-sm font-medium mb-2">Name</label>
-                        <input type="text" id="name" name="name" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-custom" placeholder="Your name" required>
+                        <input type="text" id="name" name="name"
+                            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-custom"
+                            placeholder="Your name" required>
                     </div>
                     <div>
                         <label class="block text-sm font-medium mb-2">Email</label>
-                        <input type="email" id="email" name="email" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-custom" placeholder="Your email" required>
+                        <input type="email" id="email" name="email"
+                            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-custom"
+                            placeholder="Your email" required>
                     </div>
                     <div>
                         <label class="block text-sm font-medium mb-2">Message</label>
-                        <textarea id="message" name="message" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-custom h-32" placeholder="Your message" required></textarea>
+                        <textarea id="message" name="message"
+                            class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-custom h-32"
+                            placeholder="Your message" required></textarea>
                     </div>
-                    <button type="submit" class="!rounded-button w-full bg-custom hover:bg-custom/90 text-white py-3 font-medium">Send Message</button>
+                    <button type="submit"
+                        class="!rounded-button w-full bg-custom hover:bg-custom/90 text-white py-3 font-medium">Send
+                        Message</button>
                 </form>
             </div>
         </div>
@@ -314,10 +291,12 @@ Postman API Student Expert</pre>
                     <a href="https://github.com/SadeepaNHerath" class="text-gray-400 hover:text-custom">
                         <i class="fab fa-github text-xl"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/sadeepa-herath-02ab67310/" class="text-gray-400 hover:text-custom">
+                    <a href="https://www.linkedin.com/in/sadeepa-herath-02ab67310/"
+                        class="text-gray-400 hover:text-custom">
                         <i class="fab fa-linkedin text-xl"></i>
                     </a>
-                    <a href="https://www.tiktok.com/@sadeepanherath?_t=8rwDzR7qySW&_r=1" class="text-gray-400 hover:text-custom">
+                    <a href="https://www.tiktok.com/@sadeepanherath?_t=8rwDzR7qySW&_r=1"
+                        class="text-gray-400 hover:text-custom">
                         <i class="fab fa-tiktok text-xl"></i>
                     </a>
                     <a href="https://www.youtube.com/@SadeepaHearth" class="text-gray-400 hover:text-custom">
@@ -327,6 +306,9 @@ Postman API Student Expert</pre>
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
